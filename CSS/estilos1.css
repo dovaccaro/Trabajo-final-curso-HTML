@@ -1,0 +1,103 @@
+/* Hoja de estilos de HTML */
+
+/* Para que se adapte al formato de la ventana*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Defino el estilo del header */
+header {
+  /* Aqui tomamos una tipografia de https://fonts.google.com */
+  font-family: 'Rubik Gemstones', cursive;
+  font-family: 'Unbounded', cursive;
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  float: inline-start;
+}
+
+/* Estilo del footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  /*display: flex;*/
+  float: inline-end;
+  /*align-items: center;*/
+  line-height: 40px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: white;
+  height: 650px;
+}
+
+/* Defino las propiedades de los elementos clase 'izquierdo' */
+.izquierdo {
+  background-color: #cdd1d4;
+  padding: 20px;
+  float: left;
+  width: 15%; /* Ancho de 20%, por defecto */
+  height: 600px;
+}
+
+/* Defino las propiedades de los elementos clase 'central' */
+.central {
+  background-color: #dfd7d7;
+  padding: 20px;
+  float: left;
+  width: 70%; /* Ancho de 60%, por defecto */
+  height: 600px;
+}
+
+/* Defino las propiedades de los elementos clase 'derecho' */
+.derecho {
+  background-color: #e4d895;
+  padding: 20px;
+  float: left;
+  width: 15%; /* Ancho de 20%, por defecto */
+  height: 600px;
+}
+
+.menu_item {
+  line-height: 40px;
+}
+
+.subtitulo {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Determino la resolución de la pantalla */
+@media screen and (max-width: 800px) {
+  .izquierdo, .central, .derecho {
+    width: 100%; /* El ancho será 100%, cuando viewport es 800px o menor */
+  }
+}
+
+.btn-group .button_menu {
+  background-color: #b4e2f0; /* Green */
+  border: 2px solid rgb(138, 145, 146);
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 230px;
+  display: block;
+}
+
+/*
+footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+*/

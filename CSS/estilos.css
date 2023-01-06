@@ -1,4 +1,70 @@
+/* Hoja de estilos de HTML */
 
-* {background-color:aqua;}
+/* Para que se adapte al formato de la ventana*/
 
-div{color:black}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo del header */
+header {
+  /* Aqui tomamos una tipografia de https://fonts.google.com */
+  font-family: 'Rubik Gemstones', cursive;
+  font-family: 'Unbounded', cursive;
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Creamos dos columnas */
+nav {
+  float: left;
+  width: 20%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: rgb(177, 172, 172);
+  padding: 20px;
+}
+
+/* Estilo de la lista del menu lateral */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #cabcbc;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+
+/* Estilo del footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive respuesta a los diferentes equipos y tamaños de ventana */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
