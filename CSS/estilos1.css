@@ -6,8 +6,25 @@
   box-sizing: border-box;
 }
 
+/* Definimos los formatos de texto por defecto para todo el documento */
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ajustamos margenes y padding del título principal*/
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 1px;  /*define el mismo padding en todo el contorno */
+}
+
+
+/* Agregamos interlineado y justificación a los párrafos*/
+p {
+  line-height: 1.5;
+  text-align:justify;
 }
 
 /* Defino el estilo del header */
@@ -16,9 +33,9 @@ header {
   font-family: 'Rubik Gemstones', cursive;
   font-family: 'Unbounded', cursive;
   background-color: #666;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   color: white;
   float: inline-start;
 }
@@ -37,8 +54,8 @@ footer {
   height: 650px;
 }
 
-/* Defino las propiedades de los elementos clase 'izquierdo' */
-.izquierdo {
+/* Defino las propiedades de los elementos clase 'menu_izquierdo' */
+.menu_izquierdo {
   background-color: #cdd1d4;
   padding: 20px;
   float: left;
@@ -62,10 +79,6 @@ footer {
   float: left;
   width: 15%; /* Ancho de 20%, por defecto */
   height: 600px;
-}
-
-.menu_item {
-  line-height: 40px;
 }
 
 .subtitulo {

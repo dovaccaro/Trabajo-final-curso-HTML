@@ -1,47 +1,59 @@
-<HTMLPLAY:PLay>
   <!DOCTYPE html>
   <html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- Defino la localización de la hoja de estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="css/estilos1.css">
+    <!-- Para importar fonts de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&family=Unbounded:wght@600&display=swap" rel="stylesheet">
+    <!-- Titulo de la ventana -->
     <title>CV-Personal</title>
+    <!-- Para definir un icono en la pestaña de la ventana -->
+    <link rel="icon" type="image/x-icon" href="icons/icon_ventana.ico">  
   </head>
   <body>
     <header>
+      <img src="images/Imagen999.jpg" height="130px" width="90px" alt="Formato incompatible con su versión de navegador, intente con otro"/>
       <h1>CV - Roberto Fernandez</h1>
     </header>
 
-    <section>
+    <div class="menu_izquierdo">
+      <p class="subtitulo">Información</p>
       <nav>
-        <ul>
-          <li><a href="test.html">Información personal</a></li>
-          <li><a href="#">Formación académica</a></li>
-          <li><a href="#">Experiencia Laboral</a></li>
-          <li><a href="#">Certificados</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
+          <div class="btn-group">
+            <button id="info" class="button_menu" href="info.html">Información personal</button>
+            <button id="formacion" class="button_menu" href="formacion.html">Formación académica</button>
+            <button id="experiencia" class="button_menu" href="experiencia.html">Experiencia Laboral</button>
+            <button id="certificados" class="button_menu" href="certificados.html">Certificados</button>
+            <button id="contacto" class="button_menu" href="contacto.html">Contacto</button>
+          </div>
       </nav>
-      
-      <article>
-        <h1>Presentación</h1>
-        <p>Soy un profesional con una extensa carrera en la industria de generación hidroeléctrica, habiendo desempeñado funciones, tanto en el area de mantenimiento,</p>
-        <p>como en operaciones, planificación y movimiento de energía. Hace catorce años que estoy a cargo ( Gerente de Central ) de una central hidroeléctrica de 295 MW</p>
-        <p>instalados, de ahí que tambien sumo habilidades en la gestión y administración, tanto de los servicios como de los proyectos de mejora y actualización, que</p>
-        <p>van surgiendo con el decorrer del tiempo</p>
-        <p>Es importante destacar que tenemos implementadas y certificadas las normas ISO 9001, ISO 14001, ISO 18001, ISO 50001 e ISO 55001</p>
-        <P>Me considero una persona proactiva, con un fuerte foco en los resultados y extremadamente curioso en cuanto a las nuevas tecnologías y su implementación en</P>
-        <p>en mi ambito de responsabilidad. Además me siento confortable en ambientes de trabajo colaborativo, ya sea por equipos o células.</p>
-      </article>
-    </section>
+    </div>
     
+    <div class="central">
+      <p class="subtitulo">Presentación</p>
+      <article>
+        <p>Soy un profesional con una extensa carrera en la industria de generación hidroeléctrica, habiendo desempeñado funciones, tanto en el area de mantenimiento,
+        como en operaciones, planificación y movimiento de energía. Hace catorce años que estoy a cargo ( Gerente de Central ) de una central hidroeléctrica de 295 MW
+        instalados, de ahí que tambien sumo habilidades en la gestión y administración, tanto de los servicios como de los proyectos de mejora y actualización, que
+        van surgiendo con el decorrer del tiempo.</p>
+        <p>Es importante destacar que tenemos implementadas y certificadas las normas <strong>ISO 9001, ISO 14001, ISO 18001, ISO 50001 e ISO 55001.</strong></p>
+        <P>Me considero una persona proactiva, con un fuerte foco en los resultados y extremadamente curioso en cuanto a las nuevas tecnologías y su implementación en
+        en mi ambito de responsabilidad. Además me siento confortable en ambientes de trabajo colaborativo, ya sea por equipos o células.</p>
+      </article>
+    </div>
+    
+    <div class="derecho">
+      <p class="subtitulo">Otros links</p>
+    </div>
+
     <footer>
-      <p>e-mail roberto.fernandez@itr.com - Tel. +54 11 4534-0862</p>
+       <div>e-mail roberto.fernandez@itr.com - Tel. +54 11 4534-0862</div>
     </footer>
-    </body>
+    <script src="js/funciones.js"></script>
+  </body>
   </html>
-</HTMLPLAY:PLay>
