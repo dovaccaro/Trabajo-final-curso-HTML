@@ -1,35 +1,21 @@
 /**
- * Funciones en JavaScript utilizadas por index.html
+ * Funciones en JavaScript utilizadas por contacto.html
  * 
  */
 
-/** Como son varios elementos con clase 'button_menu' primero obtengo la lista de todos los
- *  elementos de esa clase y luego le asignamos el listener con click a cada uno
- */
-
-list = document.getElementsByClassName("button_menu");
-console.log(list);
-
-/** Aquí enuncio todos los Ids de los botones del menu 
-const IDs = ["info", "formacion", "experiencia", "certificados", "contacto"];
-*/
 
 /**
  *  Esta función se encarga de asignarle a cada button de la clase button_menu una función
  *  por el evento click de acuerdo con su ID específico
  */
 
-for(let i=0; i<list.length; i++){
-  /* Asigno un Listener a cada button de la lista */
-  list[i].addEventListener("click", function(){  
-  /* Recupero loa IDs de la lista de buttons */
-  let ids = list[i].attributes.ID.value;
-  /* Recupero las url de la lista de buttons */
-  let url = document.getElementById(ids).attributes.href.value; 
+document.getElementById('usr_info').addEventListener("click", function(){  
+  /* Recupero la url*/
+  let url = document.getElementById('usr_info').attributes.href.value; 
   /* Llamo a la función lo la url correpondiente */
   ventanaSecundaria(url); 
   }); 
-}
+
 
 /**  Para abrir una ventana secundaria en base a la url recibida como parametro  y el
  *   el centro de la plantalla
