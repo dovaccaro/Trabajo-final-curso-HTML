@@ -3,6 +3,7 @@
  * 
  */
 
+
 /** Demostración de uso del almacenamiento local */
 if (!localStorage.nameuser) {
   localStorage.nameuser = "Anonimo";
@@ -47,7 +48,7 @@ function ventanaSecundaria (URL){
   var Ancho = screen.width;
   var Alto = screen.height;
   var A = Ancho*50/100;
-  var H = Alto*50/100;
+  var H = Alto*62/100;
   var difA = Ancho - A;
   var difH = Alto - H;
   var tope = difH/2;

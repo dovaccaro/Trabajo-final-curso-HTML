@@ -15,6 +15,8 @@ document.getElementById("button_usr").addEventListener("click", function(){
   let email = document.getElementById("email").value;
   let empresa = document.getElementById("empresa").value;
 
+
+  /** Verifica que los campos obligatorios tengan contenido */
   if(nombre==""){
     window.alert("Debe ingresar el nombre");
     return
@@ -30,6 +32,9 @@ document.getElementById("button_usr").addEventListener("click", function(){
     return
   }
 
+
+  /** Si no tenía registrado un nombre en el Local Storage o si era 'Anonimo' lo reemplazo */
+
   if (!localStorage.nameuser || localStorage.nameuser == "Anonimo" ) {
     localStorage.nameuser = nombre + " " + apellido;
   }
@@ -38,7 +43,7 @@ document.getElementById("button_usr").addEventListener("click", function(){
 
   }); 
 
-
+ 
 	/**
 	 * Método que envía un e-mail a través del cliente que tenga por defecto
 	 */

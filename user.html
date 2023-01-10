@@ -18,19 +18,27 @@
   <header>
     <h1>Información del interesado</h1>
   </header>
-  <form class="central_child" action="" method="post">
-    <label><strong> Ud. lo desea puedo ponerme en contacto vía E-mail dejando sus datos</strong></label>
-    <p><label id="input_usr">Nombre (*)
-    <input type="text" id="nombre"  placeholder="Ingrese su nombre" required/>
-    <label id="input_usr">Apellido (*)
-    <input type="text" id="apellido" placeholder="Ingrese su apellido" required/></p>
-    <p><label id="input_usr">E-mail (*)
-    <input type="email" id="email" placeholder="Ingrese su E-mail" required/>
-    <label id="input_usr">Empresa
-    <input type="text" id="empresa" placeholder="Ingrese su empresa"/></p>
-    <input type="submit" value="Enviar" id="button_usr"/>
-    <!--<button id="button_usr" type="button"> Hacer click </button> -->
-  </form>
+  <div class="central_child"><strong> Ud. lo desea puedo ponerme en contacto vía E-mail dejando sus datos</strong></div>
+  <div class="izquierdo_child">
+    <p>Nombre (*)
+      <input type="text" id="nombre"  placeholder="Ingrese su nombre" required/>
+    </p>
+    <p>E-mail (*)
+      <input type="email" id="email" placeholder="Ingrese su E-mail" required/>
+    </p>
+    <br/><button id="button_usr" type="button" class="button_info"> Enviar </button>    
+  </div>
+  <div class="derecho_child">
+    <p>Apellido (*)
+      <input type="text" id="apellido" placeholder="Ingrese su apellido" required/>
+    </p>
+    <p>Empresa
+      <input type="text" id="empresa" placeholder="Ingrese su empresa"/>
+    </p>  
+    <!-- <input type="submit" value="Enviar" id="input_usr"/> -->
+    <br/><button id="button_close" type="button" class="button_info_left"> Cerrar </button>    
+  </div>
 </body>
 <script src="js/funciones_user.js"></script>
+<script src="js/funciones_global.js"></script>
 </html>

@@ -13,7 +13,7 @@ document.getElementById('usr_info').addEventListener("click", function(){
   /* Recupero la url*/
   let url = document.getElementById('usr_info').attributes.href.value; 
   /* Llamo a la función lo la url correpondiente */
-  ventanaSecundaria(url); 
+  ventanaDatos(url); 
   }); 
 
 
@@ -21,20 +21,20 @@ document.getElementById('usr_info').addEventListener("click", function(){
  *   el centro de la plantalla
 */
 
-function ventanaSecundaria (URL){ 
+function ventanaDatos (URL){ 
   console.log("llamo a la funcion");
   var Ancho = screen.width;
   var Alto = screen.height;
   var A = Ancho*50/100;
-  var H = Alto*50/100;
+  var H = Alto*33/100;
   var difA = Ancho - A;
   var difH = Alto - H;
   var tope = difH/2;
   var lado = difA/2;
-  var Opciones="status=no, menubar=no, directories=no, location=no, toolbar=no, scrollbars=yes, resizable=no, width="+A+", height="+H+", top="+tope+", left="+lado+"";
+  /*Opciones="status=no, menubar=NO, directories=NO, location=NO, toolbar=NO scrollbars=NO, resizable=NO, width="+A+", height="+H+", top="+tope+", left="+lado+""; */
+  Opciones="status=no, menubar=NO, directories=NO, location=NO, toolbar=NO, scrollbars=NO, resizable=NO, width="+A+", height="+H+", top="+tope+", left="+lado+""; 
   w = window.open(URL,"_blank",Opciones);
 
 }
-
 
 

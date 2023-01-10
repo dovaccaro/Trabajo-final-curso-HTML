@@ -86,14 +86,6 @@ footer {
   height: 600px;
 }
 
-/* Defino las propiedades de los elementos clase 'central_child' */
-.central_child {
-  background-color: #dfd7d7;
-  padding: 20px;
-  float: left;
-  width: 100%; /* Ancho de 100%, por defecto */
-  height: 600px;
-}
 
 /* Defino las propiedades de los elementos clase 'derecho' */
 .derecho {
@@ -104,11 +96,46 @@ footer {
   height: 600px;
 }
 
+.izquierdo_child {
+  background-color: #dfd7d7;
+  padding: 20px;
+  float: left;
+  width: 50%; /* Ancho de 50%, por defecto */
+  /*height: 600px; */
+}
+
+
+/* Defino las propiedades de los elementos clase 'central_child' */
+.central_child {
+  background-color: #dfd7d7;
+  padding: 20px;
+  float: left;
+  width: 100%; /* Ancho de 50%, por defecto */
+  /*height: 600px; */
+}
+
+/* Defino las propiedades de los elementos clase 'central_child' */
+.derecho_child {
+  background-color: #dfd7d7;
+  padding: 20px;
+  float: left;
+  width: 50%; /* Ancho de 50%, por defecto */
+  /*height: 600px; */
+}
+
 .subtitulo {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
+
+
+.certificados {
+  font-size: 20px;
+  font-weight: bold;
+  line-height:1.5
+}
+line-height="1.5"
 
 /* Determino la resolución de la pantalla */
 @media screen and (max-width: 800px) {
@@ -136,6 +163,20 @@ footer {
   color: #000000;
   padding: 5px 12px;
   text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  width: 200px;
+  display: block;
+}
+
+.button_info_left {
+  background-color: #f1e7a9; 
+  border: 2px solid rgb(138, 145, 146);
+  color: #000000;
+  padding: 5px 12px;
+  text-align: center;
+  align-self: left;
   text-decoration: none;
   font-size: 15px;
   cursor: pointer;
