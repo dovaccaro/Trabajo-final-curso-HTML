@@ -22,7 +22,6 @@ document.getElementById('usr_info').addEventListener("click", function(){
 */
 
 function ventanaDatos (URL){ 
-  console.log("llamo a la funcion");
   var Ancho = screen.width;
   var Alto = screen.height;
   var A = Ancho*50/100;
