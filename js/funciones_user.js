@@ -5,15 +5,14 @@
 
 
 /**
- *  Esta función se encarga de asignarle a cada button de la clase button_menu una función
- *  por el evento click de acuerdo con su ID específico
+ *  Esta función se encarga de asignarle a cada variable el valor que haya cargado el usuario
  */
 
 document.getElementById("button_usr").addEventListener("click", function(){  
-  let nombre = document.getElementById("nombre").value;
-  let apellido = document.getElementById("apellido").value;
-  let email = document.getElementById("email").value;
-  let empresa = document.getElementById("empresa").value;
+  let nombre = document.getElementsByName("nombre")[0].value;
+  let apellido = document.getElementsByName("apellido")[0].value;
+  let email = document.getElementsByName("email")[0].value;  
+  let empresa = document.getElementsByName("empresa")[0].value;
 
 
   /** Verifica que los campos obligatorios tengan contenido */
