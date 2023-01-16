@@ -135,7 +135,7 @@ footer {
   font-weight: bold;
   line-height:1.5
 }
-line-height="1.5"
+
 
 /* Determino la resolución de la pantalla */
 @media screen and (max-width: 800px) {
@@ -144,6 +144,7 @@ line-height="1.5"
   }
 }
 
+/* Definimos los estilos para el menú principal */
 .btn-group .button_menu {
   background-color: #b4e2f0;
   border: 2px solid rgb(138, 145, 146);
@@ -157,6 +158,7 @@ line-height="1.5"
   display: block;
 }
 
+/* Definimos los estilos para los botones en general */
 .button_info {
   background-color: #f1e7a9; 
   border: 2px solid rgb(138, 145, 146);
@@ -197,11 +199,3 @@ line-height="1.5"
   display: block;
 }
 
-
-/*
-footer::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-*/

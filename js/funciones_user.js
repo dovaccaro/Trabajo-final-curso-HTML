@@ -32,11 +32,9 @@ document.getElementById("button_usr").addEventListener("click", function(){
   }
 
 
-  /** Si no tenía registrado un nombre en el Local Storage o si era 'Anonimo' lo reemplazo */
+  /** Registramos el nombre en el Local Storage, para dar la "bienvenida" en el proximo ingreso */
 
-  if (!localStorage.nameuser || localStorage.nameuser == "Anonimo" ) {
-    localStorage.nameuser = nombre + " " + apellido;
-  }
+  localStorage.nameuser = nombre + " " + apellido;
 
   enviarCorreo(email, nombre, apellido, empresa);
 
