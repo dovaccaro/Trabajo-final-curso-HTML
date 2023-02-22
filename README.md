@@ -17,8 +17,12 @@ realidad es una mera coincidencia.
 
 Con respecto a la extructura de archivos, basicamente se creó un fichero javascript con las funciones propias de cada hoja HTML y además se
 creó un fichero javascript que contiene aquellas funciones que son utilizadas por todas, o varias de las hojas HTML.
-En lo referente a la hoja de estilos CSS preferí concentrar todo en un archivoa pesar que resultar un poco complejo, porque la intensión
-fué, mantener el mismo estilo en todad las ventanas.
+En lo referente a la hoja de estilos CSS preferí concentrar todo en un archivo a pesar que resultar un poco complejo, porque la intensión
+fué, mantener el mismo estilo en todas las ventanas.
 
 Vale aclarar que en muchos casos la funcionalidad no tiene una lógica real, y fue concebida para mostrar los conocimientos adquiridos en
 el curso, mas algunos otros que investigué, tal nos lo solicitaron durante el dictado del curso.
+
+Como detalle de color el menú de la página principal ( index.html ) tiene una estructura, junto con la función que lo asiste, que permite
+agregar nuevos elementos con mucha facilidad, ya que la función addlistener usa un ciclo "for" limitado por la longitud de la lista de 
+elementos del menú, de esta forma simplemente agregando un nuevo boton, el mismo ya asocia su función vinculada al click.
